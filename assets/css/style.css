@@ -44,8 +44,9 @@ header{
     font-size: 18px;
     line-height: 22px;
     padding-top: 19px;
-    float: right;
     margin-left: 50px;
+    display: inline-block;
+    float: right;
 }
 
 .nav-logo{
@@ -72,7 +73,7 @@ header{
 
 .first-screen>.wrapper>a{
     padding: 15px 20px;
-    font-size: 1.25rem;
+    font-size: 18px;
     font-weight: 700;
     background-color: #101010;
     border: 1px solid transparent;
@@ -119,6 +120,8 @@ header{
     font-size: 20px;
     width: 340px;
     text-align: center;
+    margin-top: 15px;
+    margin-bottom: 5px;
 }
 
 .card>p{
@@ -216,13 +219,20 @@ footer>.wrapper{
     max-width: 900px;
 }
 
+.privacy>.nav-footer-li{
+    float: right;
+}
+
+.rights>.nav-footer-li{
+    margin-left:196px;
+}
+
 .nav-footer-li{
+    display: inline-block;
     list-style: none;
     font-weight: 600;
     font-size: 18px;
     line-height: 22px;
-    float: right;
-    margin-left: 191px;
     margin-top: 20px;
 }
 
@@ -291,4 +301,254 @@ footer>.wrapper{
     text-align: center;
     width: 90px;
     margin-top: 25px;
+}
+
+.nav-footer{
+    height: 60px;
+}
+
+
+@media screen and (max-width: 1240px){
+
+    .wrapper{
+        max-width: 1100px;
+    }
+
+    .aboutUs>.wrapper{
+        max-width: 1100px;
+    }
+    
+}
+
+@media screen and (max-width: 1130px) {
+    .wrapper{
+        max-width: 990px;
+    }
+}
+
+@media screen and (max-width: 1010px){
+    .wrapper{
+        max-width: 850px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .about-img{
+        display: none;
+    }
+
+    .aboutUs>.wrapper{
+        max-width: 400px;
+    }
+
+    .about-h2{
+        width: 400px;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .about-p{
+        margin-right: 0;
+    }
+
+}
+
+@media screen and (max-width: 920px){
+    .quote-text{
+        font-size: 26px;
+        width: 700px;
+        margin: 0 auto;
+    }
+    .quote-author{
+        padding-top: 15px;
+        height: 25px;
+        font-size: 20px;
+    }
+    .rights>.nav-footer-li{
+        display: block;
+        margin: 0 auto;
+        padding-top: 20px;
+        width: 279px;
+        text-align: center;
+    }
+} 
+
+@media screen and (max-width: 900px) {
+    .benefits{
+        height: auto;
+    }
+
+    .benefits>.wrapper{
+        width: 440px;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .first-text{
+        font-size: 26px;
+    }
+
+    .wrapper{
+        max-width: 750px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .wrapper{
+        max-width: 610px;
+    }
+    .quote-text{
+        font-size: 18px;
+        line-height: 30px;
+        width: 470px;
+    }
+    .quote-author{
+        padding-top: 0;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .wrapper{
+        max-width: 470px;
+    }
+
+    .first-logo{
+        font-size: 60px;
+        text-align: center;
+    }
+
+    .first-text{
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .nav-li{
+        font-size: 14px;
+    }
+
+    .scrollTo2{
+        font-size: 16px;
+    }
+    .rights>.nav-footer-li{
+        width: 220px;
+        
+    }
+    .nav-footer-li{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    header>.wrapper{
+        max-width: 470px;
+    }
+    .wrapper{
+        max-width: 400px;
+    }
+
+    .first-text{
+        font-size: 16px;
+    }
+    .benefits>.wrapper{
+        max-width: 340px;
+    }
+    .card-img{
+        margin: 40px 0 0 145px;
+    }
+    .card{
+        width: 340px;
+    }
+    .about-h2{
+        font-size: 28px;
+        max-width: 370px;
+        margin-top: 30px;
+    }
+    .about-p{
+        font-size: 14px;
+        max-width: 370px;
+    }
+    .aboutUs>.wrapper{
+        max-width: 370px;
+    }
+    .aboutUs{
+        height: 450px;
+    }
+    .quote-text{
+        font-size: 14px;
+        line-height: 20px;
+        width: 370px;
+    }
+    .quote{
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .nav-li{
+        margin-left: 20px;
+    }
+    .rights>.nav-footer-li{
+        width: 155px;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .first-text{
+        font-size: 14px;
+    }
+    .first-logo{
+        font-size: 50px;
+        line-height: 60px;
+    }
+    header>.wrapper{
+        max-width: 470px;
+    }
+    .wrapper{
+        max-width: 350px;
+    }
+    .sendAplycation>.wrapper{
+        max-width: 350px;
+    }
+    .input-send{
+        width: 350px;
+    }
+    .sendBtn{
+        margin-top: 15px;
+        margin-left: 82px;
+    }
+}
+
+@media screen and (max-width: 390px){
+    .about-p{
+        width: 320px;
+    }
+    .about-h2{
+        width: 320px;
+    }
+    .aboutUs>.wrapper{
+        max-width: 320px;
+    }
+    .aboutUs{
+        height: 480px;
+    }
+    .quote-text{
+        padding-top: 30px;
+        width: 340px;
+    }
+    .quote{
+        height: 130px;
+    }
+    footer>.wrapper{
+       max-width: 155px;
+    }
+    footer{
+        height: 150px;
+    }
+    .nav-footer>a>.nav-logo>img{
+        margin-left: 23px;
+    }
+    .privacy>.nav-footer-li{
+        float: none;
+        margin-left: 27px;
+    }
 }
