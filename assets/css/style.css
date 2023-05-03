@@ -38,6 +38,11 @@ header{
     width: 880px;
 }
 
+header>.wrapper>nav{
+    display: flex;
+    justify-content: space-between;
+}
+
 .nav-li{
     list-style: none;
     font-weight: 600;
@@ -52,7 +57,26 @@ header{
 .nav-logo{
     list-style: none;
     padding-top: 19px;
-    float: left;
+}
+
+.burger-btn{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    margin-right: 15px;
+    display: none;
+}
+
+.burger-span{
+    width: 34px;
+    height: 3px;
+    display: block;
+    border-radius: 2px;
+    background: #fff;
+}
+
+.burger-span + .burger-span{
+    margin-top: 7px;
 }
 
 .first-logo{
@@ -173,28 +197,24 @@ header{
 
 .aboutUs>.wrapper{
     max-width: 1128px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .about-img{
-    float: left;
-    margin-top: 30px;
+    margin-top: 56px;
 }
 
 .about-h2{
+    margin-top: 56px;
     font-weight: 700;
     font-size: 36px;
     line-height: 44px;
-    margin-top: 57px;
-    float: right;
-    margin-right: 150px;
+    margin-bottom: 25px;
 }
 
 .about-p{
-    width: 400px;
-    margin-right: 40px;
-    margin-top: 15px;
-    float: right;
-    text-align: center;
+    width: 463px;
     font-weight: 500;
     font-size: 18px;
 }
@@ -305,6 +325,48 @@ footer>.wrapper{
 
 .nav-footer{
     height: 60px;
+}
+
+.burger__menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    max-width: 300px;
+    background: #101010;
+    margin-left: auto;
+    transform: translateX(100%);
+    transition: all .2s;
+    height: 100vh;
+}
+
+.burger__menu-btn{
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.burger-link{
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.burger__menu.--show{
+    transform: translateX(0%);
+}
+
+.burger-link{
+    background: transparent;
+    border: none;
+    cursor: pointer;
 }
 
 
@@ -515,6 +577,15 @@ footer>.wrapper{
     .sendBtn{
         margin-top: 15px;
         margin-left: 82px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .nav-ul{
+        display: none;
+    }
+    .burger-btn{
+        display: block;
     }
 }
 
