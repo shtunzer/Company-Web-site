@@ -4,25 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Wach Home</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <title>Wach Home</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <header>
         <div class="wrapper">
             <nav>
+                <a href="index.html" class="nav-logo"><img src="assets/img/WACH.svg"></a>
+                <button class="burger-btn" id="burger-btn-open">
+                    <span class="burger-span"></span>
+                    <span class="burger-span"></span>
+                    <span class="burger-span"></span>
+                </button>
                 <ul class="nav-ul">
-                    <a href="/wach/"><li class="nav-logo"><img src="assets/img/WACH.svg"></li></a>
                     <a href="#" class="scrollTo3"><li class="nav-li">To Order</li></a>
                     <a href="#" class="scrollTo1"><li class="nav-li">About Us</li></a>
-                    <a href="/wach/"><li class="nav-li">Home</li></a>
+                    <a href="index.html"><li class="nav-li">Home</li></a>
                 </ul>
             </nav>
         </div>
     </header>
+    <section class="burger__menu" id="burger__menu">
+        <div class="burger-inner">
+            <button class="burger__menu-btn" id="burger-btn-hide"><img src="assets/img/hide.svg" class="burger__menu-img"></button>
+            <a href="index.html" class="burger-link">Home</a>
+            <button class="burger-link">About Us</button>
+            <button href="#" class="burger-link">To order</button>
+        </div>
+    </section>
     <section class="first-screen">
         <div class="wrapper">
             <h1 class="first-logo">WACH</h1>
@@ -65,11 +78,11 @@
     </section>
     <section class="aboutUs">
         <div class="wrapper">
-            <img src="assets/img/aboutUs2.png" class="about-img">
             <div class="aboutUs-text">
                 <h2 class="about-h2">About Us</h2>
                 <p class="about-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, ut fugiat aliquid enim non tempore rerum quae cum sint sequi ipsa mollitia est corrupti consequatur nam eum veritatis atque quas placeat distinctio harum, quia dolore? Fuga eos ullam iure, animi perspiciatis saepe minima optio quos porro officia vero ipsum doloremque?<br><br> Amet quos consequuntur eius ipsam? Suscipit ad accusamus blanditiis magni, animi quidem exercitationem facere assumenda vitae reiciendis repellat eos, laborum modi dolores est! A, voluptatem ipsam impedit temporibus debitis dicta optio tempora, voluptatibus quidem nobis illum totam aliquid perspiciatis, aspernatur quos quibusdam sapiente ex dolor molestias vero aut? Libero, nam!</p>
             </div>
+            <img src="assets/img/aboutus.jpg" class="about-img">
         </div>
     </section>
     <section id="order" class="sendAplycation">
@@ -94,7 +107,7 @@
     <footer>
         <div class="wrapper">
             <ul class="nav-footer">
-                <a href="/wach/"><li class="nav-logo"><img src="assets/img/WACH.svg"></li></a>
+                <a href="index.html"><li class="nav-logo"><img src="assets/img/WACH.svg"></li></a>
                 <a href="#" class="privacy"><li class="nav-footer-li">Privacy Policy</li></a>
                 <a class="rights"><li class="nav-footer-li">wach.org © All rights reserved</li></a>
             </ul>
