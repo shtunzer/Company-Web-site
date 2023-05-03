@@ -1,16 +1,11 @@
+document.getElementById('burger-btn-open').addEventListener('click', function(){
+  document.getElementById('burger__menu').classList.add('--show');
+});
+document.getElementById('burger-btn-hide').addEventListener('click', function(){
+  document.getElementById('burger__menu').classList.remove('--show');
+});
+
 //Скролл
-
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("header").style.top = "0";
-  } else {
-    document.getElementById("header").style.top = "-200px";
-  }
-  prevScrollpos = currentScrollPos;}
-
-
 
   function scrollTo(element) {
     window.scroll({
